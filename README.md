@@ -8,12 +8,14 @@ This project was made for my Data Analyst course. The goal was to scrape histori
 * **`NHL_analysis.ipynb`**: Jupyter Notebook containing the data cleaning, analysis, visualizations, and odds modeling.
 * **`NHL_seasons_combined.csv`**: The finalized dataset used for the analysis. It contains NHL regular season statistics from **1990 to 2025** (excluding the 2004–2005 season, which was canceled due to the NHL lockout).
 
+Files need to be placed in current working directory to work properly.
+
 ## Libraries & Tools Used
 
-The following Python libraries were utilized for web scraping, file management, data manipulation, and visualization:
+The following Python libraries were used for web scraping, file management, data manipulation and visualization:
 
 * **Web Scraping & Automation**: `selenium`, `time`
-* **File & Directory Management**: `pathlib`, `glob`
+* **File & Directory Management**: `pathlib`
 * **Data Manipulation**: `pandas`, `numpy`
 * **Data Visualization**: `matplotlib`, `seaborn`
 
