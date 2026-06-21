@@ -6,9 +6,28 @@ This project was made for my Data Analyst course. The goal was to scrape histori
 
 * **`NHL_scrape.ipynb`**: Jupyter Notebook containing the web scraping script used to collect the data.
 * **`NHL_analysis.ipynb`**: Jupyter Notebook containing the data cleaning, analysis, visualizations, and odds modeling.
-* **`NHL_seasons_combined.csv`**: The finalized dataset used for the analysis. It contains NHL regular season statistics from **1990 to 2025** (excluding the 2004–2005 season, which was canceled due to the NHL lockout).
+* **`NHL_seasons_combined.csv`**: The primary analysis dataset. It contains NHL regular season statistics from **1990 to 2025** (excluding the 2004–2005 season, which was canceled due to the NHL lockout). You can run the analysis notebook with this file alone.
 
-Files need to be placed in current working directory to work properly.
+## How to run
+
+1. Clone the repository and open the project directory.
+2. Create a virtual environment and install dependencies:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+3. Start Jupyter and open `NHL_analysis.ipynb`:
+
+```bash
+jupyter notebook
+```
+
+4. Run the notebook from the cell that loads `NHL_seasons_combined.csv`. The combined CSV in the repository is the primary dataset for analysis.
+
+Optional: run `NHL_scrape.ipynb` first if you want to regenerate season CSVs from Hockey-Reference. That notebook requires Google Chrome and a compatible ChromeDriver.
 
 ## Libraries & Tools Used
 
